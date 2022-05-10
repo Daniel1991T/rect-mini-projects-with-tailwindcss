@@ -1,13 +1,138 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply tracking-widest
+        capitalize
+        leading-5
+        mb-3;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-[2rem];
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-sm;
+  }
+
+  p {
+    @apply mb-5;
+  }
+  ul {
+    list-style-type: none;
+  }
+
+  .prev-btn,
+  .next-btn {
+    @apply text-blue-400 text-lg bg-transparent 
+    border-transparent my-0 mx-2 transition-all duration-300 ease-linear;
+  }
+
+  .underline {
+    @apply w-20 h-1 bg-amber-400 mr-auto ml-auto rounded;
+  }
+
+  .btn-cocktail {
+    @apply uppercase tracking-[2px] text-greenDark border-2 border-solid
+    border-greenDark py-2 px-3 inline-block transition-all duration-300 ease-linear
+    cursor-pointer text-sm bg-transparent rounded hover:bg-greenDark
+    hover:text-mainWhite;
+  }
+
+  .btn-cocktail-white {
+    @apply bg-transparent text-white border-mainWhite hover:bg-mainWhite hover:text-greenDark;
+  }
+
+  .btn-cocktail-primary {
+    @apply bg-greenDark text-mainWhite border-transparent
+    hover:bg-yellowLight hover:text-greenDark;
+  }
+
+  .btn-cocktail-block {
+    @apply w-full block my-0 mx-auto shadow-[2px_5px_3px_0px_rgba(0,_0,_0,_0.5)] text-center;
+  }
+
+  .btn-cocktail-detail {
+    @apply py-1 px-2 hover:bg-yellowLight hover:border-yellowLight;
+  }
+
+  .loader,
+  .loader:before,
+  .loader:after {
+    background: transparent;
+    -webkit-animation: load1 1s infinite ease-in-out;
+    animation: load1 1s infinite ease-in-out;
+    width: 1em;
+    height: 4em;
+  }
+  .loader {
+    color: #476a2e;
+    text-indent: -9999em;
+    margin: 88px auto;
+    margin-top: 20rem;
+    position: relative;
+    font-size: 3rem;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  .loader:before,
+  .loader:after {
+    position: absolute;
+    top: 0;
+    content: "";
+  }
+  .loader:before {
+    left: -1.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  .loader:after {
+    left: 1.5em;
+  }
+  @-webkit-keyframes load1 {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 0;
+      height: 4em;
+    }
+    40% {
+      box-shadow: 0 -2em;
+      height: 5em;
+    }
+  }
+  @keyframes load1 {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 0;
+      height: 4em;
+    }
+    40% {
+      box-shadow: 0 -2em;
+      height: 5em;
+    }
+  }
 }
