@@ -7,7 +7,7 @@ const Question = ({ title, info }) => {
     return (
         <div className='flex bg-white flex-col w-full rounded shadow-md shadow-yellow-50 my-2 p-2'>
             <div className='flex flex-row items-center justify-between'>
-                <h3>{title}</h3>
+                <h3 className='text-black'>{title}</h3>
                 <button className='bg-gray-300 p-2 text-red-500 border-transparent rounded-full'
                     onClick={() => setExpanded(!expanded)}
                 >

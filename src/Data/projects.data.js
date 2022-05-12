@@ -1,74 +1,76 @@
+import { accordionScreen, birthdayScreen, cocktailScreen, colorGeneratorScreen, githubPic, groceryScreen, loremScreen, menuScreen, reviewScreen, sliderScreen, tabScreen, toursScreen } from "../assets"
+
 export const projectData = [
     {
         id: 1,
         name: "Birthday Remainder",
         path: "projects/birthday-remainder",
-        image: ""
+        image: birthdayScreen
     },
     {
         id: 2,
         name: "Tours",
         path: "/projects/tours",
-        image: ""
+        image: toursScreen
     },
     {
         id: 3,
         name: "Reviews",
         path: "/projects/reviews",
-        image: ""
+        image: reviewScreen
     },
     {
         id: 4,
         name: "Accordion",
         path: "/projects/accordion",
-        image: ""
+        image: accordionScreen
     },
     {
         id: 5,
         name: "Menu",
         path: "/projects/menu",
-        image: ""
+        image: menuScreen
     },
     {
         id: 6,
         name: "Tabs",
         path: "/projects/tabs",
-        image: ""
+        image: tabScreen
     },
     {
         id: 7,
         name: "Slider",
         path: "/projects/slider",
-        image: ""
+        image: sliderScreen
     },
     {
         id: 8,
         name: "Lorem-Ipsum",
         path: "/projects/lorem-ipsum",
-        image: ""
+        image: loremScreen
     },
     {
         id: 9,
         name: "Color Generator",
         path: "/projects/color-generator",
-        image: ""
+        image: colorGeneratorScreen
     },
     {
         id: 10,
         name: "Grocery Bud",
         path: "/projects/grocery-bud",
-        image: ""
+        image: groceryScreen
     },
     {
         id: 11,
         name: "Cocktails",
         path: "/projects/cocktails",
-        image: ""
+        image: cocktailScreen
     },
     {
         id: 12,
         name: "Search Github User",
         path: "/projects/github-users",
-        image: ""
+        image: githubPic
     },
-]
+].reverse()

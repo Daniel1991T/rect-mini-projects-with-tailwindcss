@@ -8,7 +8,7 @@ const Project = ({ name, path, image }) => {
         transition-transform duration-200 ease-in-out hover:scale-105'>
                 <img className='w-full h-60 object-cover' src={image} alt={name} />
                 <footer className='flex items-center justify-center'>
-                    <h2>{name}</h2>
+                    <h3 className='text-black'>{name}</h3>
                 </footer>
             </article>
         </Link>

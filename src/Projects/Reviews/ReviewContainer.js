@@ -44,8 +44,8 @@ const ReviewContainer = () => {
                     <FaQuoteRight />
                 </span>
             </div>
-            <h4 className='mb-1'>{name}</h4>
-            <p className='mb-2 uppercase text-blue-300 text-sm'>{job}</p>
+            <h4 className='mb-1 text-black'>{name}</h4>
+            <p className='mb-2 uppercase text-blue-300 text-sm font-bold'>{job}</p>
             <p className='mb-3'>{text}</p>
             <div className='flex items-center justify-center'>
                 <button className='prev-btn hover:text-blue-500' onClick={prevPerson}>

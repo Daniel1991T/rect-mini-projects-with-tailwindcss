@@ -8,7 +8,7 @@ const TourItem = ({ id, image, info, price, name, removeTour }) => {
             <img className='w-full h-80 object-cover rounded-tr rounded-tl' src={image} alt={name} />
             <footer className='px-4 py-2'>
                 <div className='flex justify-between items-center mb-6'>
-                    <h4 className='mb-0 text-base font-bold'>{name}</h4>
+                    <h4 className='mb-0 text-base font-bold text-black'>{name}</h4>
                     <h4 className='mb-0 text-base text-blue-500 font-bold bg-blue-100 px-2 py-1 rounded'>${price}</h4>
                 </div>
                 <p>{

@@ -13,7 +13,7 @@ const MenuList = ({ items }) => {
                     border-solid border-amber-400 block rounded md:h-36" />
                     <div className="">
                         <header className='flex justify-between border-b-[0.5px] border-dotted border-gray-500'>
-                            <h4 className='mb-2 font-bold'>{title}</h4>
+                            <h4 className='mb-2 text-black font-bold'>{title}</h4>
                             <h4 className='mb-2 text-amber-400'>${price}</h4>
                         </header>
                         <p className='mb-0 pt-4'>{desc}</p>

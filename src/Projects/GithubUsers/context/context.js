@@ -21,7 +21,7 @@ const GithubProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     axiosGit.interceptors.request.use(config => {
-        config.headers.common['Authorization'] = `token ${process.env.REACT_APP_GITHUB_TOKEN}`
+        // config.headers.common['Authorization'] = `token ${process.env.REACT_APP_GITHUB_TOKEN}`
         return config
     }, (error) => {
         return Promise.reject(error)
