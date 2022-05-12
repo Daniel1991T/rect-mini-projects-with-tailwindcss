@@ -65,4 +65,10 @@ export const projectData = [
         path: "/projects/cocktails",
         image: ""
     },
+    {
+        id: 12,
+        name: "Search Github User",
+        path: "/projects/github-users",
+        image: ""
+    },
 ]

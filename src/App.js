@@ -8,6 +8,8 @@ import BirthdayRemainder from './Projects/BirthdayRemainder/BirthdayRemainder';
 import CocktailsApp from './Projects/Cocktails/CocktailsApp';
 import { AboutCocktail, ErrorCocktail, HomeCocktail, SingleCocktail } from './Projects/Cocktails/pages'
 import ColorGenerator from './Projects/ColorGenerator/ColorGenerator';
+import GithubUserApp from './Projects/GithubUsers/GithubUserApp';
+import { AboutGithubSearch, HomeGithubSearch } from './Projects/GithubUsers/pages';
 import GroceryBud from './Projects/GroceryBud/GroceryBud';
 import LoremIpsum from './Projects/LoremIpsum/LoremIpsum';
 import Menu from './Projects/Menu/Menu';
@@ -39,6 +41,10 @@ function App() {
           <Route path='about' element={<AboutCocktail />} />
           <Route path='cocktail/:id' element={< SingleCocktail />} />
           <Route path='*' element={<ErrorCocktail />} />
+        </Route>
+        <Route path='/projects/github-users/*' element={<GithubUserApp />} >
+          <Route index element={<HomeGithubSearch />} />
+          <Route path='about' element={<AboutGithubSearch />} />
         </Route>
       </Routes>
     </BrowserRouter>
